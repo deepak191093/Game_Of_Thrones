@@ -21,8 +21,3 @@ export const addBook = ({
   }
 });
 
-// REMOVE_EXPENSE
-export const removeUser = (id = "") => ({
-  type: "DELETE",
-  id
-});

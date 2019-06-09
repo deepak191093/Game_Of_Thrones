@@ -1,6 +1,4 @@
 import React from "react";
-import Timer from "@material-ui/icons/TimerRounded";
-import LabelR from "@material-ui/icons/LabelRounded";
 import CircularProgress from "@material-ui/core/CircularProgress";
 
 class CharacterInfo extends React.Component {
@@ -25,7 +23,7 @@ class CharacterInfo extends React.Component {
 
   render() {
     if (this.state.data) {
-      // console.log("data",this.state.data);
+  
       return (
         <div className="flex-box">
           <h3>{this.state.data.name}</h3>

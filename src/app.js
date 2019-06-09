@@ -8,7 +8,7 @@ const store = configureStore();
 
 store.subscribe(() => {
   localStorage.setItem("Books", JSON.stringify(store.getState()));
-  // console.log("store",store.getState());
+
 });
 
 const jsx = (

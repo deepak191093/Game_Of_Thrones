@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import Avatar from "@material-ui/core/Avatar";
 import Book from "@material-ui/icons/BookRounded";
 import Person from "@material-ui/icons/Person";
-import PersonPin from "@material-ui/icons/PersonPinCircleRounded";
+
 
 class BookInfo extends React.Component {
   constructor(props) {
