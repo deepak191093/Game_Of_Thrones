@@ -5,11 +5,8 @@ import BookInfo from "./BookInfo";
 const Books = props => {
   return (
     <div className="book-container">
-     {props.BooksData.map(BookData => (
-        <BookInfo
-          key={BookData.isbn}
-          data={BookData}
-        />
+      {props.BooksData.map(BookData => (
+        <BookInfo key={BookData.isbn} data={BookData} />
       ))}
     </div>
   );

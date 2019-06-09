@@ -5,9 +5,7 @@ import { addBook } from "../store/action";
 
 const AddBooks = props => (
   <div>
-    <Books
-      addBooks={data => props.dispatch(addBook(data))}
-    />
+    <Books addBooks={data => props.dispatch(addBook(data))} />
   </div>
 );
 

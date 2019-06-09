@@ -5,35 +5,36 @@ import Book from "@material-ui/icons/BookRounded";
 import Person from "@material-ui/icons/Person";
 import PersonPin from "@material-ui/icons/PersonPinCircleRounded";
 
-
-
 class BookInfo extends React.Component {
   constructor(props) {
     super(props);
   }
 
   render() {
-    let date =  new Date(this.props.data.released).toDateString();
+    let date = new Date(this.props.data.released).toDateString();
     return (
       <div className="book">
         <h2>Book Information </h2>
-        <Book style={{width : "2em"}}/>
+        <Book style={{ width: "2em" }} />
         <div className="Book-Name">
-          <h3 style={{ textTransform: "uppercase", textDecoration: 'underline' }}>
+          <h3
+            style={{ textTransform: "uppercase", textDecoration: "underline" }}
+          >
             {this.props.data.name}
           </h3>
           <h3>By</h3>
           <h3>
-            <Person/>
+            <Person />
             {this.props.data.authors}
-            <Person/>            
+            <Person />
           </h3>
           <h3>Released On</h3>
-          <h3>
-           {date}      
-          </h3>
+          <h3>{date}</h3>
           <div>
-            <Link to={{pathname :'/characters' ,url : this.props.data.url}} style={{ color: "white" }}>
+            <Link
+              to={{ pathname: "/characters", url: this.props.data.url }}
+              style={{ color: "white" }}
+            >
               <Avatar
                 size="large"
                 src="./images.png"
@@ -47,7 +48,7 @@ class BookInfo extends React.Component {
               />
             </Link>
           </div>
-         </div>
+        </div>
       </div>
     );
   }
